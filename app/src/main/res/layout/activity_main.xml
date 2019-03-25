@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/draw_layout"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/top_icon01"
+            />
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="게시판"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+        <Button
+            android:id="@+id/writin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:text="글쓰기" />
+        <Button
+            android:id="@+id/find_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:text="찾기"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/relate_layout"
+        android:id="@+id/list_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/search_btn"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/baseline_search_black_18dp" />
+
+    <EditText
+        android:id="@+id/search_id"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#eb99a0df"
+        android:layout_gravity="start"
+        >
+
+        <TextView
+            android:id="@+id/log_out"
+            android:layout_below="@id/writing_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/writing_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글작성하기"
+            android:textSize="15sp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

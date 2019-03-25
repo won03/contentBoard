@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <TextView
+        android:id="@+id/id_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="143dp"
+        android:text="아이디:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/Ed_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_log"
+        android:layout_toRightOf="@id/id_log"
+      />
+
+    <TextView
+        android:id="@+id/pw_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="194dp"
+        android:text="비밀번호:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/Ed_pw"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ed_id"
+        android:layout_toRightOf="@id/pw_log"
+      />
+
+    <Button
+        android:id="@+id/btn_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="198dp"
+        android:text="확인" />
+
+    <CheckBox
+        android:id="@+id/check_autoLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pw_log"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 암호 저장"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/check_autoLog"
+        android:layout_alignTop="@id/check_autoLog"
+        />
+
+</RelativeLayout>
